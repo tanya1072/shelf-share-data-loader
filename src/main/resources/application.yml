@@ -1,0 +1,30 @@
+spring.application.name: shelfshare-data-loader
+
+datadump.location:
+  author: C:\Users\ASUS\Downloads\test-authors.txt
+  works: C:\Users\ASUS\Downloads\test-works.txt
+  
+
+spring.main.allow-circular-references: true
+
+spring:
+    cassandra:
+      config: 
+      keyspace-name: main
+      username: vSXLQwYFRouMbblNcRRkPeHG
+      password: SEv_8XrPFcTM-zhn-CZUieZKaROp7vYfw-oEaOmPcTlSUKe8QIasbXHs9IG1yZNHXRfPKodU+r0vOy8R5S3-OTdt.wgpnkKJJk4-B+_Ms4S2csTTtW2707R8g,xSENkS
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+astra.db:
+    id: 1a5ee0ff-9914-4ac7-a8a6-5d974e5fd191-1
+    region: us-east1
+    keyspace: main
+    application.token: AstraCS:vSXLQwYFRouMbblNcRRkPeHG:5e372679afa2b9e85919067776a687655a980be3306d2e933729ac96fb4907a1
